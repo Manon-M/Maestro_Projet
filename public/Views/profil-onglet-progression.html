@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/css/style.css">
+    <link rel="stylesheet" href="../CSS/css/imghover.css">
+    <title>Maestro</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-warning bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="img-fluid" src="../IMG/M_Maestro.png">
+                </a>
+                <div class="d-flex justify-content-end">
+                    <a href="./connexion.html">
+                    <p class="text-primary pr-1">Mon Compte</p>  
+                    </a> 
+                    <a href="./connexion.html">
+                        <img class="img-fluid" src="../IMG/picto_utilisateur2.png" alt="login user" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--------NAVBAR DU PROFIL UTILISATEUR-------------------------------->
+    <div class="container-fluid bg-warning pt-5">     
+        <div class="navbar navbar-expand-lg navbar-light bg-warning">
+            <strong class="text-dark">Bienvenue apprenant, John Doe!</strong>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-lg">               
+                <div class="collapse navbar-collapse row justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item border-right border-dark">
+                            <a class="nav-link text-dark" href="./profil-enseignant.html"><strong>Mon compte</strong></a>
+                        </li>
+                        <li class="nav-item ml-2 border-right border-dark">
+                            <a class="nav-link text-dark" href="./profil-enseignant.html"><strong>Mes profils</strong></a> 
+                        </li>
+                        <li class="nav-item border-right border-dark">
+                            <a class="nav-link text-dark" href="./profil-onglet-progression.html"><strong>Progression</strong></a>
+                        </li>
+                        <li class="nav-item border-right border-dark">
+                            <a class="nav-link text-dark" href="./profil-onglet-download-enseignant.html"><strong>Téléchargement</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./messagerie.html"><strong>Messagerie</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="text-dark mt-5 ml-3">Mes statistiques</h1>
+        <div class="row bg-info p-0 mt-5">
+            <div class="col-lg-5 col-sm-12 p-5">
+                <h3 class="text-dark">Mon temps d'activités :</h3>
+            </div>
+            <div data-aos="zoom-in" class="col-lg-5 col-sm-12 p-5">
+                <img class="img-fluid" src="../Img/graphique_dactivite.png" alt="graphique d'activités">
+            </div>
+        </div>
+        <div class="row bg-primary p-0 mt-5">
+            <div class="col-lg-5 col-sm-12 p-5">
+                <h3 class="text-dark">Ma progression sur les niveaux :</h3>
+            </div>
+            <div data-aos="zoom-in" class="col-lg-5 col-sm-12 p-5">
+                <img class="img-fluid" src="../Img/Statut_des_niveaux.png" alt="graphique d'activités">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="container pt-3">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-sm-12">
+                        <p class="text-primary text-center"><a href="./page-contact.html">Nous contacter</a></p>
+                    </div>
+                    <div class="col-lg-5 col-sm-12">
+                        <p class="text-primary text-center"><a href="./CGV.html">Nos CGV</a></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="text-primary">Copyright 2021 - Maestro - Tous droits réservés.</p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

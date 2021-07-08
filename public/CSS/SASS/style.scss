@@ -1,0 +1,141 @@
+
+$theme-colors: (
+  "info": #88C1F2,
+  "primary": #D9CA9C,
+  "dark": #203359,
+  "warning": #F25252,
+  "secondary" : #D9A33E
+);
+$red-color : #F25252;
+$orange-color : #D9A33E;
+
+$font-family-sans-serif: "Nunito", Arial, sans-serif;
+
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$red-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+body{
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+.newsletter{
+  max-width: 350px;
+  padding: 7px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.bordure{
+  border: 3px solid #D9A33E;
+}
+
+.bordureb{
+  border: 3px solid #88C1F2;
+}
+
+.bordurer{
+  border: 3px solid #F25252;
+}
+
+.anim-bounceDown{
+  animation-name: bounceInRight;
+  animation-duration: 5s;
+}
+
+.download{
+  border: 0px;
+  border-radius: 15px;
+  background-color: #D9A33E;
+  padding: 10px;
+}
+
+
+.section {
+  background-color: #88C1F2;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.column {
+  margin: 10px;
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 0;
+  margin: auto 10px;
+  text-align: center;
+}
+
+.column input {
+    width: 100%;
+}
+
+.column:first-of-type {
+  
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.hid {
+  display: none;
+}
+
+.card{
+  display : none;
+}
+
+svg:hover{
+  #anim-jac{
+    animation: disque 1s forwards;
+  } 
+}
+
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes disque{
+  from{
+    
+  }
+  to{
+    transform: translate3d(200px, 0, 0);
+  }
+}
+
+@import './scss/bootstrap.scss';
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import './sass/animations';
+@import './color_svg.scss'
